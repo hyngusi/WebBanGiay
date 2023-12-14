@@ -124,7 +124,7 @@
               <!-- Section: Color -->
               <section class="mb-4">
 
-                <h6 class="font-weight-bold mb-3">Color</h6>
+                <h6 class="font-weight-bold mb-3">Màu</h6>
 
                 <div class="btn-group btn-group-toggle btn-color-group d-block mt-n2 ml-n2" data-toggle="buttons">
                   <label class="btn rounded-circle white border-inset-grey p-3 m-2">
@@ -183,7 +183,7 @@
                 <a href="#!" class="text-reset"><i class="fas fa-th-large fa-lg"></i></a href="#!">
               </div>
               <div class="col-12 col-md-5">
-                <div class="d-flex flex-wrap">
+                <div class="d-flex flex-wrap">  
                   <div class="select-outline position-relative w-100">
                     <select class="mdb-select md-outline md-form" searchable="Search here..">
                       <option value="" disabled selected>Choose category</option>

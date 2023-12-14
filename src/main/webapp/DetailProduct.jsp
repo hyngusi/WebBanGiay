@@ -190,8 +190,8 @@
               <table class="table table-sm table-borderless">
                 <tbody>
                   <tr>
-                    <td class="pl-0 pb-0 w-25">Quantity</td>
-                    <td class="pb-0">Select size</td>
+                    <td class="pl-0 pb-0 w-25">Số lượng</td>
+                    <td class="pb-0">Size</td>
                   </tr>
                   <tr>
                     <td class="pl-0">
@@ -210,17 +210,17 @@
                         <div class="form-check form-check-inline pl-0">
                           <input type="radio" class="form-check-input" id="small" value="small" name="size" checked>
                           <label class="form-check-label small text-uppercase card-link-secondary"
-                            for="small">Small</label>
+                            for="small">39</label>
                         </div>
                         <div class="form-check form-check-inline pl-0">
                           <input type="radio" class="form-check-input" id="medium" value="medium" name="size">
                           <label class="form-check-label small text-uppercase card-link-secondary"
-                            for="medium">Medium</label>
+                            for="medium">40</label>
                         </div>
                         <div class="form-check form-check-inline pl-0">
                           <input type="radio" class="form-check-input" id="large" value="large" name="size">
                           <label class="form-check-label small text-uppercase card-link-secondary"
-                            for="large">Large</label>
+                            for="large">41</label>
                         </div>
                       </div>
                     </td>
@@ -229,9 +229,8 @@
               </table>
             </div>
             <div class="mt-1">
-             <button type="submit" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
-           <button type="submit" class="btn btn-light btn-md mr-1 mb-2"><i class="fas fa-shopping-cart pr-2"></i>Add to
-              cart</button>
+             <button type="submit" class="btn btn-primary btn-md mr-1 mb-2" style="font-size: 16px">Mua ngay</button>
+           <button type="submit" class="btn btn-light btn-md mr-1 mb-2" style="font-size: 16px"><i class="fas fa-shopping-cart pr-2"></i>Thêm vào giỏ</button>
               </div>
               </form>
               
@@ -247,55 +246,55 @@
         <ul class="nav tabs-primary nav-justified" id="advancedTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active show" id="description-tab" data-toggle="tab" href="#description" role="tab"
-              aria-controls="description" aria-selected="true">Description</a>
+              aria-controls="description" aria-selected="true">Mô tả</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info"
-              aria-selected="false">Information</a>
+              aria-selected="false">Thông tin</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
-              aria-selected="false">Reviews (${countAllReview })</a>
+              aria-selected="false">Đánh giá (${countAllReview })</a>
           </li>
         </ul>
         <div class="tab-content" id="advancedTabContent">
           <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-            <h5>Product Description</h5>
+            <h5>Mô tả sản phẩm</h5>
             
             <h6>$${String.format("%.02f",detail.price*0.9) }</h6>
             <p class="pt-1">${detail.description}</p>
           </div>
           <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
-            <h5>Additional Information</h5>
+            <h5>Thông tin thêm</h5>
             <table class="table table-striped table-bordered mt-3">
               <thead>
                 <tr>
-                  <th scope="row" class="w-150 dark-grey-text h6">Weight</th>
+                  <th scope="row" class="w-150 dark-grey-text h6">Trọng lượng</th>
                   <td><em>0.3 kg</em></td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" class="w-150 dark-grey-text h6">Dimensions</th>
+                  <th scope="row" class="w-150 dark-grey-text h6">Kích cỡ</th>
                   <td><em>50 × 60 cm</em></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-            <h5><span>${countAllReview }</span> review for <span>${detail.name }</span></h5>
+            <h5><span>${countAllReview }</span> đánh giá <span>${detail.name }</span></h5>
             
-             <h5 class="mt-4">Add a review</h5>
+             <h5 class="mt-4">Đánh giá</h5>
             <p></p>
       
             <div>
               <!-- Your review -->
               <div class="md-form md-outline">
                 <textarea id="form76" class="md-textarea form-control pr-6" rows="4"></textarea>
-                <label for="form76">Your review</label>
+                <label for="form76">...</label>
               </div>
               <div class="text-right pb-2">
-                <button type="button" class="btn btn-primary" onclick="addReview(${detail.id})">Add a review</button>
+                <button type="button" class="btn btn-primary" onclick="addReview(${detail.id})">Thêm đánh giá</button>
               </div>
             </div>
             
@@ -339,7 +338,7 @@
       <!--Section: Block Content-->
       <section class="text-center">
 
-        <h4 class="text-center my-5"><strong>Related products</strong></h4>
+        <h4 class="text-center my-5"><strong>Sản phẩm tương tự</strong></h4>
 
         <!-- Grid row -->
         <div class="row">

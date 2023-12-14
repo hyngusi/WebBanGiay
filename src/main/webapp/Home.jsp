@@ -128,7 +128,7 @@
     <img style="height:auto; width:120px; margin: auto;" src="https://theme.hstatic.net/200000078815/1001045559/14/support_1_ic_medium.png?v=261">
     <div class="card-body">
       <h5 class="card-title" style="text-align:center">GIAO HÀNG MIỄN PHÍ</h5>
-      <p class="card-text" style="text-align:center">Áp dụng cho đơn hàng > 1,000,000VND</p>
+      <p class="card-text" style="text-align:center">Giao hàng nhanh chóng</p>
     </div>
   </div>
   <div class="card" style="border-style: none;">
@@ -214,7 +214,7 @@
                             </div>
                         </c:forEach>
                     </div>
-                   <button onclick="loadMoreNike()" class="btn btn-primary">Load more</button>
+                   <button onclick="loadMoreNike()" class="btn btn-primary">Xem thêm</button>
                 </div>
             </div>
             
@@ -243,7 +243,7 @@
                             </div>
                         </c:forEach>
                     </div>
-                   <button onclick="loadMoreAdidas()" class="btn btn-primary">Load more</button>
+                   <button onclick="loadMoreAdidas()" class="btn btn-primary">Xem thêm</button>
                 </div>
             </div>
             

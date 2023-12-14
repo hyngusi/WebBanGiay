@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,7 +20,7 @@
     	<jsp:include page="Menu.jsp"></jsp:include>
         <div id="logreg-forms">
             <form class="form-signin" action="order" method="post">
-                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Order</h1>
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Đặt hàng</h1>
                 <c:if test="${error!=null }">
                  <div class="alert alert-danger" role="alert">
 						 ${error}
@@ -30,16 +31,16 @@
 				  	${mess}
 				</div>
 				</c:if>
-                <label for="name">Name</label>
-                <input name="name" type="text" id="name" class="form-control" placeholder="Name" required="" autofocus="">
-                 <label for="phoneNumber">Phone number</label>
-                <input name="phoneNumber" type="text" id="phoneNumber" class="form-control" placeholder="Phone number" required="" autofocus="">
+                <label for="name">Tên</label>
+                <input name="name" type="text" id="name" class="form-control" placeholder="Tên" required="" autofocus="">
+                 <label for="phoneNumber">Số điện thoại</label>
+                <input name="phoneNumber" type="text" id="phoneNumber" class="form-control" placeholder="Số điện thoại" required="" autofocus="">
                 <label for="email">Email</label>
-                <input name="email" type="text" id="email" class="form-control" placeholder="email" required="" autofocus="">
-                <label for="deliveryAddress">Delivery Address</label>
-                <input name="deliveryAddress" type="text" id="deliveryAddress" class="form-control" placeholder="Delivery Address" required="" autofocus="">
+                <input name="email" type="text" id="email" class="form-control" placeholder="Email" required="" autofocus="">
+                <label for="deliveryAddress">Địa chỉ</label>
+                <input name="deliveryAddress" type="text" id="deliveryAddress" class="form-control" placeholder="Địa chỉ" required="" autofocus="">
                
-                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-american-sign-language-interpreting"></i>Dat Hang</button>
+                <button class="btn btn-success btn-block" type="submit"><i class="fas fa-american-sign-language-interpreting"></i> Đặt hàng</button>
                 
             </form>
 
